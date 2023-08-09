@@ -21,18 +21,16 @@ services:
           Dth:
             image: vivekchiliveri/dthrepopaytm:latest
             ports:
-              - "82:80
+              - "82:80"
             deploy:
               replicas: 3
 
 
-
-              recharge:
-                image: vivekchiliveri/recharerepopaytm:latest
-                ports:
-                  - "83:80"
-                deploy:
-                  replicas: 3
-
+recharge:
+image: vivekchiliveri/recharerepopaytm:latest
+ports:
+- "83:80"
+deploy:
+replicas: 3
 
 
