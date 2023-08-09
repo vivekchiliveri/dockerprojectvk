@@ -9,7 +9,7 @@ services:
 
 
 
-      movies:
+      movie:
         image: vivekchiliveri/moviesrepopaytm:latest
         ports:
           - "81:80"
