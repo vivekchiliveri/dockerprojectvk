@@ -1,1 +1,38 @@
+version: '3'
+services:
+  train:
+    image: vivekchiliveri/trainrepopaytm
+    ports:
+      - "80:80"
+    deploy:
+      replicas: 3
+
+
+
+      movies:
+        image: vivekchiliveri/moviesrepopaytm
+        ports:
+          - "81:80"
+        deploy:
+          replicas: 3
+
+
+
+          Dth:
+            image: vivekchiliveri/dthrepopaytm
+            ports:
+              - "82:80
+            deploy:
+              replicas: 3
+
+
+
+              recharge:
+                image: vivekchiliveri/recharerepopaytm
+                ports:
+                  - "82:80"
+                deploy:
+                  replicas: 3
+
+~
 
