@@ -30,7 +30,7 @@ services:
               recharge:
                 image: vivekchiliveri/recharerepopaytm:latest
                 ports:
-                  - "82:80"
+                  - "83:80"
                 deploy:
                   replicas: 3
 
