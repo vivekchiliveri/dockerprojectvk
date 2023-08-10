@@ -1,28 +1,28 @@
 version: '3'
 services:
   movies:
-    image: vivekchiliveri/moviesrepopaytm:latest
+    image: vivekchiliveri/moviesrepo:latest
     ports:
       - "80:80"
     deploy:
       replicas: 3
 
   train:
-    image: vivekchiliveri/trainrepopaytm:latest
+    image: vivekchiliveri/trainrepo:latest
     ports:
       - "81:80"
     deploy:
       replicas: 3
 
   dth:
-    image: vivekchiliveri/dthrepopaytm:latest
+    image: vivekchiliveri/dthrepo:latest
     ports:
       - "82:80"
     deploy:
       replicas: 3
 
   recharge:
-    image: vivekchiliveri/recharerepopaytm:latest
+    image: vivekchiliveri/rechargerepo:latest
     ports:
       - "83:80"
     deploy:
